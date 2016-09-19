@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script   src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+<script src="js/tmpl.js"></script>
+<script src="js/script.js?1"></script>   
+<title>HW 13-14</title>
+</head>
+<body>
+<script type="text/template" id="test">
+<div class="wrapper">
+	<form id="q_form">
+		<h1>Тест ни о чем!</h1>
+		    <p><%= localText[0].question1 %></p>
+			 <label><input type="radio" name="answer1" value="Ans1"><%= localText[0].answer1%></label>
+			 <label><input type="radio" name="answer1" value="Ans2"><%= localText[0].answer2%></label>
+			 <label><input type="radio" name="answer1" value="Ans3"><%= localText[0].answer3%></label>
+			<p><%= localText[1].question2 %></p>
+			 <label><input type="radio" name="answer2" value="Ans4"><%= localText[1].answer4%></label>
+			 <label><input type="radio" name="answer2" value="Ans5"><%= localText[1].answer5%></label>
+			 <label><input type="radio" name="answer2" value="Ans6"><%= localText[1].answer6%></label>
+			<p><%= localText[2].question3 %></p>
+			 <label><input type="radio" name="answer3" value="Ans7"><%= localText[2].answer7%></label>
+			 <label><input type="radio" name="answer3" value="Ans8"><%= localText[2].answer8%></label>
+			 <label><input type="radio" name="answer3" value="Ans9"><%= localText[2].answer9%></label> 
+		<input name="send_btn" type="submit" value="Пройти тест">
+	</form>
+</div>	
+</script>
+<div class="rezult">
+	<p class="message">Тест пройден</p>
+	<button type="reset" form="q_form">ОК</button>
+</div>
+		
+</body>
+</html>
